@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>MCU Trivia Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js" defer></script>
+</head>
+
+<body>
+	<div class="game-container">
+		
+		<header>
+			<h1>MCU Trivia Game</h1>
+		</header>
+		
+		<div class="content-container">
+			
+			<div class="start-menu">
+				<h2>Welcome to the Marvel Cinematic Universe Trivia Game!</h2>
+				<div>See how well you know the MCU!</div>
+				<div>Press the button below to get started!</div>
+				<div class="button" id="start-button">Start Game!</div>
+			</div>
+			
+			<div class="question-menu hidden">
+				<div class="timer">Time remaining: <span class="counter"></span></div>
+				<div class="question-container">
+					<div class="question">Insert a new question here and the answers will appear below. Understand?</div>
+					<div class="option 0">Answer One</div>
+					<div class="option 1">Answer Two</div>
+					<div class="option 2">Answer Three</div>
+					<div class="option 3">Answer Four</div>
+				</div>
+				<div class="question-counter">Question <span id="current-question">X</span> of 10</div>
+			</div>
+			
+			<div class="answer-menu hidden">
+				<div class="timer">Time remaining: <span class="counter"></span></div>
+				<div class="result"></div>
+				<div class="answer"></div>
+				<img src="#" alt="">
+				<div class="question-counter"></div>
+			</div>
+			
+			<div class="gameover-menu hidden">
+				<div class="end-message">All Done!</div>
+				<div class="end-stats">
+					<div class="stats">Correct: <span id="correct"></span></div>
+					<div class="stats">Incorrect: <span id="incorrect"></span></div>
+					<div class="button" class="start-button"></div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+
+</html>
