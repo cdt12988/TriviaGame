@@ -2,6 +2,8 @@ var trivia = {
 	
 	currentQuestion: 0,
 	
+	questionNumber: 0,
+	
 	correct: 0,
 	
 	incorrect: 0,
@@ -45,6 +47,12 @@ var trivia = {
 		'Mind Stone'	
 	],
 	
+	prevQuestions: [],
+	
+	prevChoices: [],
+	
+	prevAnswers: [],
+	
 	shuffleArray: function(array) {
 	    for (var i = array.length-1; i > 0; --i) {
 	        var j = Math.floor(Math.random() * (i+1));
@@ -56,9 +64,16 @@ var trivia = {
 		
 	newQuestion: function() {
 		
+//	Displays the current question	
 		$('.question').text(trivia.questions[trivia.currentQuestion]);
+		
+//	Displays the current question number
 		$('#current-question').text(trivia.currentQuestion +1);
+		
+//	Shuffles the answer choices to appear in random order
 		trivia.shuffleArray(trivia.choices[trivia.currentQuestion]);
+		
+//	Cycles through the (now shuffled) choices array and displays each choice in the appropriate HTML element
 		for(var i = 0; i < 4; i++) {
 			$('.' + i).text(trivia.choices[trivia.currentQuestion][i])
 		}
@@ -76,16 +91,17 @@ var trivia = {
 //		console.log('Correct: ' + trivia.correct + '; Incorrect: ' + trivia.incorrect);
 		
 		trivia.currentQuestion++;
+		trivia.questionNumber++;
 		
 		if(trivia.currentQuestion < 10) {
 			trivia.newQuestion();
 		} else {
-			trivia.gameResults();
+			trivia.endGame();
 		}
 		
 	},
 	
-	gameResults: function() {
+	endGame: function() {
 		alert('Game Over!');
 	},
 	
@@ -94,6 +110,8 @@ var trivia = {
 	},
 	
 };	// End of trivia object
+
+
 
 
 $(document).ready(function(){
