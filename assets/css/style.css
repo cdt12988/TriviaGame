@@ -98,9 +98,67 @@ header {
 	background: rgba(25, 25, 112, 0.75);
 	cursor: pointer;
 }
+.question-counter {
+	margin-bottom: 1em;
+}
 
 
 
+
+
+.result {
+	font-size: 1.2em;
+	font-weight: 900;
+}
+.incorrect {
+	color: firebrick;
+}
+.image img {
+	width: 500px;
+	margin: 0.5em;
+	border: 1px solid firebrick;
+	border-radius: 1em;
+	opacity: 0.75;
+}
+#answer {
+	font-weight: 900;
+}
+
+
+
+
+
+.gameover-menu {
+	width: 100%;
+}
+.gameover-menu div {
+	margin: 0.5em auto;
+}
+.end-message {
+	font-size: 2.5em;
+	margin: 0.5em auto;
+}
+.end-stats {
+	margin: 2em auto;
+	background: rgba(178, 34, 34, 0.5);
+	border: 1px solid #FFF;
+	border-radius: 1em;
+	padding: 0.5em;
+	height: 50%;
+	width: 75%;
+	min-width: 75%;
+}
+.stats {
+	font-size: 1.25em;
+}
+#new-game {
+	padding: 1em;
+	background: rgba(25, 25, 112, 0.75); 
+	margin: 0.5em auto;
+}
+#new-game:hover {
+	background: rgba(139, 0, 0, 0.75);
+}
 
 
 
@@ -114,7 +172,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin: 0.5em auto;
+	margin: 1em auto;
 	font-size: 0.75em;
 	cursor: pointer;
 	border: 1px solid midnightblue;
