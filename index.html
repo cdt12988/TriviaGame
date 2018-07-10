@@ -2,8 +2,11 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Marvel Cinematic Universe Trivia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MCU Trivia Game</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Ceviche+One|Chewy|Titillium+Web" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="assets/javascript/app.js" defer></script>
@@ -19,7 +22,7 @@
 		<div class="content-container">
 			
 			<div class="start-menu">
-				<h2>Welcome to the Marvel Cinematic Universe Trivia Game!</h2>
+				<h2>Welcome to the Marvel Cinematic Universe Trivia!</h2>
 				<div>See how well you know the MCU! (Spoilers Ahead!)</div>
 				<div>Press the button below to get started!</div>
 				<div class="button" id="start-button">Start Game!</div>
@@ -32,7 +35,7 @@
 					<div class="option 0">Answer One</div>
 					<div class="option 1">Answer Two</div>
 					<div class="option 2">Answer Three</div>
-					<div class="option 3">Answer Four</div>
+					<div class="option 3" id="three">Answer Four</div>
 				</div>
 				<div class="question-counter">Question <span class="current-question">X</span> of 10</div>
 			</div>

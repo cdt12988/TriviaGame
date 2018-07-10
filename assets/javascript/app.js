@@ -177,6 +177,7 @@ var trivia = {
 		'Falcon',
 		'Xandar',
 		'The Milano',
+		'The Kyln',
 		'The Raft',
 		'Gamora',
 		'Quicksilver',
@@ -240,9 +241,10 @@ var trivia = {
 		'malekith.jpg',
 		'pierce.jpg',
 		'hawkeye.jpg',
-		'falcon.jpg',
+		'falcon-antman.jpg',
 		'xandar.jpg',
 		'milano.jpg',
+		'kyln.jpg',
 		'raft.jpg',
 		'gamora.jpg',
 		'quicksilver.jpg',
@@ -251,27 +253,27 @@ var trivia = {
 		'agamotto.jpg',
 		'mjolnir.jpg',
 		'poppins.jpg',
-		'ego.png',
-		'mantis.png',
-		'cap-psa.png',
-		'washington.png',
-		'vulture.png',
-		'chitauri-weapons.png',
-		'grandmaster.png',
-		'korg.png',
-		'fenris.png',
-		'revengers.png',
-		'dora-milaje.png',
-		'whitewolf.png',
-		'klaue.png',
-		'infinity-stones.png',
-		'groot.png',
-		'black-order.png',
-		'vormir.png',
-		'red-skull.png',
-		'scotland.png',
-		'eitri.png',
-		'shuri.png'
+		'ego.jpg',
+		'mantis.jpg',
+		'cap-psa.jpg',
+		'washington.jpg',
+		'vulture.jpg',
+		'chitauri-weapons.jpg',
+		'grandmaster.jpg',
+		'korg.jpg',
+		'fenris.jpg',
+		'revengers.jpg',
+		'dora-milaje.jpg',
+		'whitewolf.jpg',
+		'klaue.jpg',
+		'infinity-stones.jpg',
+		'groot.jpg',
+		'black-order.jpg',
+		'vormir.jpg',
+		'red-skull.jpg',
+		'scotland.jpg',
+		'eitri.jpg',
+		'shuri.jpg'
 	],
 	
 	prevQuestions: [],
@@ -367,7 +369,7 @@ var trivia = {
 		
 //	Stop the timer and reset the time
 		trivia.timer.stopTimer();								console.log('Images: ' + trivia.images + '; Prev Images: ' + trivia.prevImages);
-		trivia.timer.time = 10;									console.log('timer running: ' + trivia.timer.timerRunning);
+		trivia.timer.time = 15;									console.log('timer running: ' + trivia.timer.timerRunning);
 		
 //	Tests if questions have reached their limit and either asks another question or ends the game accordingly after a set amount of time
 		setTimeout(function() {
@@ -427,7 +429,7 @@ var trivia = {
 	
 	timer: {
 		
-		time: 10,
+		time: 15,
 		
 		timerId: null,
 		

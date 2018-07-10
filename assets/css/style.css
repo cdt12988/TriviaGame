@@ -1,3 +1,14 @@
+/*
+
+FONTS:
+
+font-family: 'Bangers', cursive;
+font-family: 'Ceviche One', cursive;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Chewy', cursive;
+
+*/
+
 html {
 	box-sizing: border-box;
 }
@@ -15,6 +26,8 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	
+	font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -41,11 +54,18 @@ header {
 	height: 15%;
 	margin: 0 auto;
 	border-bottom: 1px solid firebrick;
-	font-size: 3em;
+	font-size: 4em;
 	color: #FFF;
+	color: chartreuse;
+	color: #EEC643;
+	color: #FBCA03;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	
+	font-family: 'Bangers', cursive;
+/* 	font-family: 'Ceviche One', cursive; */
 }
 .content-container {
 	width: 100%;
@@ -94,6 +114,11 @@ header {
 	width: 95%;
 	margin: 0 auto;
 }
+/*
+.option {
+	color: aqua;
+}
+*/
 .option:hover {
 	background: rgba(25, 25, 112, 0.75);
 	cursor: pointer;
@@ -109,6 +134,7 @@ header {
 .result {
 	font-size: 1.2em;
 	font-weight: 900;
+	color: darkseagreen;
 }
 .incorrect {
 	color: firebrick;
@@ -155,9 +181,12 @@ header {
 	padding: 1em;
 	background: rgba(25, 25, 112, 0.75); 
 	margin: 0.5em auto;
+	border: none;
 }
 #new-game:hover {
 	background: rgba(139, 0, 0, 0.75);
+	background: rgba(251, 202, 3, 0.75);
+	border: none;
 }
 
 
@@ -177,10 +206,61 @@ header {
 	cursor: pointer;
 	border: 1px solid midnightblue;
 	border-radius: 1em;
+	
+	font-family: 'Chewy', cursive;
+	color: #FFF;
 }
 .button:hover {
 	background: rgba(139, 0, 0, 0.75);
 }
 .hidden {
 	display: none;
+}
+
+
+
+@media screen and (max-width: 960px) {
+	header {
+		font-size: 3em;
+		height: 10vh;
+		padding: 1em 0;
+	}
+	.start-menu div {
+		font-size: 0.75em;
+	}
+	.start-menu h2 {
+		font-size: 1em;
+		margin-top: 0.5em;
+	}
+	.timer {
+		margin: 1em auto;
+		box-sizng: border-box;
+	}
+	.question {
+		font-size: 0.75em;
+	}
+	.option {
+		font-size: 0.85em;
+		border-bottom: 1px dashed rgba(25, 25, 112, 0.5);
+	}
+	#three {
+		border-bottom: none;
+	}
+	.result,
+	.answer {
+		padding: 0 0.5em;
+	}
+	.answer-menu {
+		width: 100%;
+	}
+	.image img {
+		width: 275px;
+	}
+	.end-message {
+		font-size: 1.5em;
+		margin: 0.25 auto;
+	}
+	.gameover-menu div {
+		margin: 1em auto;
+	}
 }
