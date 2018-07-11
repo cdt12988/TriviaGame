@@ -286,6 +286,9 @@ header {
 	.question {
 		font-size: 0.75em;
 	}
+	.end-message {
+		font-size: 1em;
+	}
 /*
 	.option {
 		font-size: 0.75em;

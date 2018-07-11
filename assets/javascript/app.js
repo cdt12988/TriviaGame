@@ -296,8 +296,8 @@ var trivia = {
 	newQuestion: function() {
 
 //	Hides the answer and gameover menus and displays the question-menu
-	$('.question-menu').removeClass('hidden');
-	$('.answer-menu').attr('class', 'answer-menu hidden');
+		$('.question-menu').removeClass('hidden');
+		$('.answer-menu').attr('class', 'answer-menu hidden');
 
 //	Displays the initial time
 		$('.time').text(trivia.timer.time);
@@ -318,6 +318,8 @@ var trivia = {
 		for(var i = 0; i < 4; i++) {
 			$('.' + i).text(trivia.choices[trivia.currentQuestion][i])
 		}
+		
+		$('.option').blur();
 		
 //	Starts the timer
 		this.timer.startTimer();
@@ -487,7 +489,6 @@ $(document).ready(function(){
 	$('.option').on('click', function() {
 		var answer = $(this).text();
 		trivia.questionResult(answer);
-		$('.option').blur();
 	});
 	
 });	// End of document ready function
