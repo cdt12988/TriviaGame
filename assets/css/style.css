@@ -18,9 +18,9 @@ html {
 body {
 	display: grid;
 	grid:
-		". . ." 10vh
+		". . ." 5vh
 		". game ." auto
-		". . ." 10vh
+		". . ." 15vh
 		/ 10vw 80vw 10vw;
 	background-image: url('../images/background2.jpg');
 	background-size: cover;
@@ -41,7 +41,8 @@ body {
 	height: 80vh;
 */
 	grid-area: game;
-	height: 100%;
+/* 	height: 100%; */
+	height: auto;
 	width: 100%;
 	min-height: 80vh;
 	background: rgba(25, 25, 112, 0.75);
@@ -51,7 +52,7 @@ body {
 }
 header {
 	width: 90%;
-	height: 15%;
+	height: 10%;
 	margin: 0 auto;
 	border-bottom: 1px solid firebrick;
 	font-size: 4em;
@@ -78,6 +79,9 @@ header {
 	text-align: center;
 	overflow: hidden;
 }
+.start-menu {
+	height: 100%;
+}
 .start-menu h2 {
 	font-size: 1.5em;
 	padding: 0.5em;
@@ -95,15 +99,18 @@ header {
 
 .question-menu {
 	width: 100%;
+	height: 100%;
 }
 .timer {
 	margin: 0.5em auto;
 }
 .question-container {
-	height: 50%;
+/* 	height: 50%; */
+	height: auto;
 	width: 75%;
 	min-width: 75%;
-	margin: 2em auto;
+/* 	margin: 2em auto; */
+	margin: 1em auto;
 	background: rgba(178, 34, 34, 0.5);
 	border: 1px solid #FFF;
 	border-radius: 1em;
@@ -254,7 +261,7 @@ header {
 		width: 100%;
 	}
 	.image img {
-		width: 275px;
+		width: 325px;
 	}
 	.end-message {
 		font-size: 1.5em;
@@ -263,4 +270,25 @@ header {
 	.gameover-menu div {
 		margin: 1em auto;
 	}
+}
+@media screen and (max-width: 420px) {
+	.image img {
+/* 		width: 275px; */
+		width: 225px;
+	}
+	.timer {
+		font-size: 0.75em;
+		margin: 0.25em auto;
+	}
+	.start-menu h2 {
+		font-size: 0.75em;
+	}
+	.question {
+		font-size: 0.75em;
+	}
+/*
+	.option {
+		font-size: 0.75em;
+	}
+*/
 }
