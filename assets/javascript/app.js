@@ -201,7 +201,7 @@ var trivia = {
 		'Ulysses Klaue',
 		'Life Stone',
 		'Groot',
-		'loki',
+		'Loki',
 		'Vormir',
 		'Red Skull',
 		'Scotland',
