@@ -126,9 +126,16 @@ header {
 	color: aqua;
 }
 */
+/*
 .option:hover {
-	background: rgba(25, 25, 112, 0.75);
-	cursor: pointer;
+	
+}
+*/
+@media (hover:hover) {
+    .option:hover {
+        background: rgba(25, 25, 112, 0.75);
+		cursor: pointer;
+    }
 }
 .question-counter {
 	margin-bottom: 1em;
@@ -295,3 +302,11 @@ header {
 	}
 */
 }
+/*
+@media screen and (min-width 420px) {
+	.option:hover {
+		background: rgba(25, 25, 112, 0.75);
+		cursor: pointer;
+	}
+}
+*/
