@@ -487,6 +487,7 @@ $(document).ready(function(){
 	$('.option').on('click', function() {
 		var answer = $(this).text();
 		trivia.questionResult(answer);
+		$('.option').blur();
 	});
 	
 });	// End of document ready function
