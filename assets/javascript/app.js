@@ -319,8 +319,6 @@ var trivia = {
 			$('.' + i).text(trivia.choices[trivia.currentQuestion][i])
 		}
 		
-		$('.option').blur();
-		
 //	Starts the timer
 		this.timer.startTimer();
 	},
