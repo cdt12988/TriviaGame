@@ -1,5 +1,7 @@
 # Marvel Cinematic Universe Trivia
 
+Link to App: [https://cdt12988.github.io/TriviaGame](https://cdt12988.github.io/TriviaGame/ "MCU Trivia Game")
+
 This quick trivia app gives you 10 chances to test your knowledge of the MCU.
 
 ## Languages Used
