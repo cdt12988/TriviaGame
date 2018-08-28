@@ -4,6 +4,8 @@ Link to App: [https://cdt12988.github.io/TriviaGame](https://cdt12988.github.io/
 
 This quick trivia app gives you 10 chances to test your knowledge of the MCU.
 
+![Screenshot](https://cdt12988.github.io/images/portfolio/mcu.PNG "MCU Trivia Screenshot")
+
 ## Languages Used
 
 This game uses HTML5, CSS3, and JavaScript with an emphasis on implementing timers.  It also uses the jQuery framework to manipulate the DOM.
